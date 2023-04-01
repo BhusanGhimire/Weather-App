@@ -1,0 +1,67 @@
+        :root{
+         --theme-color:rgb(102, 0, 255)
+        }
+       
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        main{
+            border: 1px solid var(--theme-color);
+            height: 60vh;
+            width: 60vw;
+            border-radius: 1vmax;
+            box-shadow: 2px 2px 3px var(--theme-color),
+            2px 2px 3px var(--theme-color),
+            2px 2px 3px var(--theme-color),
+            2px 2px 3px var(--theme-color);
+        }
+        main #input{
+            margin-top: 5%;
+            width: 100%;
+            height: 5%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        main #input input{
+            width: 80%;
+            background: transparent;
+            border: 1px solid var(--theme-color);
+            border-radius: 1vmax;
+            text-align: center;
+            color: var(--theme-color);
+        }
+        ::placeholder{
+            color: var(--theme-color);
+            text-align: center;
+        }
+        main #input input,main #input img {
+            height: 100%;
+        }
+
+        main #input #searchBtn{
+            border-radius: 50vmax;
+        }
+        main #input #searchBtn:hover{
+            cursor: pointer;
+        }
+        input:focus {
+        outline: 1px solid var(--theme-color);
+        }
+        #output{
+            height: 94%;
+            color: var(--theme-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
